@@ -1,0 +1,39 @@
+﻿#divMision
+{
+    position:relative;
+    float:left;
+    width:49%;
+    border-right: 1px dashed #CCCCCC;
+    border-top: 1px dashed #CCCCCC;
+}
+    #divMision h4
+    {
+        text-align:center;
+    }
+#divVision
+{
+    position:relative;
+    float:left;
+    width:49%;
+    border-top: 1px dashed #CCCCCC;
+}
+    #divVision h4
+    {
+        text-align:center;
+    }
+#divPresentacion
+{
+    margin-top:-30px;
+    margin-bottom:50px;
+    position:relative;
+    float:left;
+    width:100%;
+}
+    #divPresentacion h4
+    {
+        text-align:center;
+    }
+    #divPresentacion p
+    {
+        font-size:14px;
+    }

@@ -1,0 +1,170 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="principal_en_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>Inicio de Sesión</title>
+        <link rel="stylesheet" type="text/css" href="../css/estiloPrincipal.css" />
+        <script type="text/javascript" src="../js/scripts.js"></script>
+        <asp:ContentPlaceHolder ID="contenidoHeader" runat="server"></asp:ContentPlaceHolder>
+    </head>
+    <body onload="ajustarTamanos();">
+        <form id="formaPrincipal" runat="server">
+            <div id="bordeSuperior" runat="server">
+                <div id="contenidoBorde">
+                    <div id="logo">
+                        <img src="../images/logoUAQ.svg" />
+                    </div>
+                    <div id="tituloBorde">
+                        <h1>AUTONOMOUS UNIVERSITY OF QUERETARO</h1>
+                        <h2>INFORMATIZATION SERVICES GENERAL COORDINATION</h2>
+                        
+                    </div>
+                    <div id="logosRedesSocialesBorde">
+                        <div>
+                            <a href="http://instagram.com/uaqmx">
+                                <img src="../images/logoInstagram.svg" />              
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com/UAQmx">
+                                <img src="../images/logoTwtter.svg" />              
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://tv.uaq.edu.mx/">
+                                <img src="../images/logoYoutube.svg" />            
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/uaq.mx">
+                                <img src="../images/logoFacebook.svg" />            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="separadorBorde"></div>
+            </div>
+            <div id="encabezado" runat="server">
+                <div id="areaPestana">
+                    <div>
+                        <img src="../images/pestana.svg" />                                  
+                    </div>
+                </div>
+                <div id="areaTituloPrincipal">
+                    <div id="titulo">
+                        <img id="logoInformatizacion" src="../images/logoInformatizacion.svg" />
+                    </div>
+                </div>
+                <div id="menuNavegacion">
+                    <ul>
+                        <li>
+                            <a href="Home.aspx">Home</a>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="Departaments.aspx">Departaments</a>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="Services.aspx">Services</a>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="AboutUs.aspx">About Us</a>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                        <li>
+                            <a href="Contacto.aspx">Contact Info</a>
+                        </li>
+                        <li>
+                            <span></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="cuerpo">
+                <div id="lateral">
+                    <div id="menuLateral">
+                    </div>
+                    <div id="divCambioBanners">
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                        <input type="radio" name="radioBanner" class="radioBanners" />
+                    </div>
+                    <span id="separadorMenuLateral"></span>
+                    <div id="divAvisos">
+                        <h2>NOTICE</h2>
+                    </div>
+                </div>
+                <div id="contenido">
+                    <asp:ContentPlaceHolder id="contenidoCuerpo" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="pieDePagina">
+                <div>
+                    <a href="http://www.uaq.mx/inf-gral/calendario/semestral.html">
+                        <img src="../images/logoBoxGris.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://maps.google.com/maps/ms?msid=200437142916695114164.0004c841a76bf6b40420d&msa=0&ll=20.584421,-100.38826&spn=0.133864,0.222988">
+                        <img src="../images/logoPin.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://148.220.4.15/">
+                        <img src="../images/logoFeed.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://perseo.uaq.mx/cas">
+                        <img src="../images/logoInterrogacion.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/contraloriasocial/">
+                        <img src="../images/logoOjo.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/directorio/">
+                        <img src="../images/logoTel.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/transparencia/uaq.html">
+                        <img src="../images/logoLupa.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://mail.uaq.mx/">
+                        <img src="../images/logoMail.svg" />
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.uaq.mx/">
+                        <img src="../images/logoCasa.svg" />
+                    </a>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

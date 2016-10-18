@@ -1,0 +1,454 @@
+﻿/*Fuentes globales para la página*/
+@font-face
+{
+    font-family: "Futura Std Light";
+    src:
+        url('../fonts/FuturaStd-Light.otf') format('opentype'),
+        url('../fonts/FuturaStd-Light.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Book";
+    src:
+        url('../fonts/FuturaStd-Book.otf') format('opentype'),
+        url('../fonts/FuturaStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Medium";
+    src:
+        url('../fonts/FuturaStd-Medium.otf') format('opentype'),
+        url('../fonts/FuturaStd-Medium.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Heavy";
+    src:
+        url('../fonts/FuturaStd-Heavy.otf') format('opentype'),
+        url('../fonts/FuturaStd-Heavy.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+/*Color y fuente global para todos los elementos*/
+*
+{
+    font-family:"Futura Std Book";
+    color:#878786;
+}
+/*Cuerpo sin margen y tamaño mínimo de 1000 pixeles en color gris claro hex FAFAFA*/
+
+body
+{
+    background-color: #f5f5f5;
+    background-image: 
+        linear-gradient(90deg, #FFFFFF 5%, transparent 25%, transparent 75%, #FFFFFF 95%),
+        linear-gradient(#FFFFFF 5%, transparent 25%, transparent 75%, #FFFFFF 95%);
+    background-size:8px 8px;
+    min-width:1120px;
+}
+
+/*Área de las clases*/
+.cajasTexto 
+{
+    color:#878786;
+    border-color:#878786;
+    border-style:solid;
+    border-width:1px;
+    width:100%;
+    height:20px;
+    margin-bottom:30px;
+}
+    .cajasTexto:focus
+    {
+        border-color:#0f205a;
+    }
+.botones 
+{
+    color:#FFFFFF;
+    border-style:none;
+    width:120px;
+    height:40px;
+    margin-bottom:30px;
+    background-color:#111547;
+}
+    .botones:hover 
+    {
+        background-color:#0f205a;
+    }
+.barraBusqueda 
+{
+    position:relative;
+    float:left;
+    width:150px;
+    height:15px;
+    border-style:none;
+    background-color:#FAFAFA;
+    color:#0F205A;
+    border-radius:5px 5px;
+
+}
+
+.cajasTextoRegistro 
+{
+    color:#878786;
+    border-color:#878786;
+    border-style:solid;
+    border-width:1px;
+    margin-bottom:30px;
+    width:70%;
+}
+    .cajasTextoRegistro:focus
+    {
+        border-color:#0f205a;
+    }
+
+.radioBanners
+{
+    width:15px;
+    height:15px;
+    padding:0;
+    margin:1px;
+}
+.radioBanners:checked
+{
+}
+
+/*El borde superior que contiene el logo de la UAQ, el título y algunos iconos con enlaces*/
+#bordeSuperior
+{
+    width:100%;
+    height:110px;
+    background-color:#FFFFFF;
+}
+/*El área del contenido del borde*/
+#contenidoBorde
+{
+    width:100%;
+    height:90px;
+}
+/*Logo de la UAQ*/
+#logo 
+{
+    position:relative;
+    float:left;
+    margin-left:10%;
+    margin-top:5px;
+    width:60px;
+    height:80px;
+    border-right: 1px solid #DEDEDE;
+    padding:0px;
+    padding-right:10px;
+}
+/*El título de la página*/
+#tituloBorde 
+{
+    position:relative;
+    float:left;
+    margin-left:5px;
+    margin-top:10px;
+}
+    #tituloBorde h1 
+    {
+        font-size:18px;
+        font-weight:lighter;
+        color:#999999;
+        margin:0px;
+    }
+    #tituloBorde h2
+    {
+        font-size:12px;
+        font-weight:lighter;
+        margin:0px;
+    }
+/*Área de los logos con enlaces externos*/
+#logosRedesSocialesBorde 
+{
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+    #logosRedesSocialesBorde div 
+    {
+        position:relative;
+        float:left;
+        margin-left:10px;
+        width:30px;
+        height:30px;
+    }
+/*El separador del borde*/
+#separadorBorde
+{
+    width:100%;
+    height:20px;
+    background-color:#111547;
+}
+/*Encabezado de la página*/
+#encabezado 
+{
+    height:350px;
+    width:80%;
+    background-color:#FFFFFF;
+    margin-left:10%;
+    margin-right:10%;
+    min-width:800px;
+}
+/*La pestaña gris*/
+#areaPestana 
+{
+    height:45px;
+    width:100%;
+}
+    #areaPestana div 
+    {
+        position:relative;
+        float:right;
+        margin-top:10px;
+        width:180px;
+        height:40px;
+        pointer-events:none;
+    }
+/*En el título se muestra el nombre del sistema*/
+/*El título principal que se encuentra en la franja azul*/
+#areaTituloPrincipal 
+{
+    height:300px;
+    width:100%;
+    background-image:url(../images/BANNER_carrera-03-02.png);
+    background-size:auto 300px;
+    background-position:center;
+}
+    #areaTituloPrincipal h1 
+    {
+        position:relative;
+        float:left;
+        font-family:'Futura Std Heavy';
+        font-size:70px;
+        color:#FFFFFF;
+        font-weight:normal;
+        line-height:32px;
+        margin-left:20px;
+    }
+#titulo
+{
+    position:relative;
+    float:left;
+    height:300px;
+    width:200px;
+    margin:0px;
+    margin-left:30px;
+    padding:0px;
+    border-width:0px;
+    background-color:#13183a;
+    background-image: 
+        linear-gradient(45deg, #FFFFFF 2%, transparent 2%, transparent 45%, #FFFFFF 45%, #FFFFFF 52%, transparent 52%, transparent 95%, #FFFFFF 95%);
+    background-size:5px 5px;
+    opacity:0.7;
+}
+#logoInformatizacion
+{
+    position:relative;
+    float:left;
+    width:180px;
+    margin-left:10px;
+    margin-top:65px;
+}
+/*El separador del encabezado*/
+#areaSeparadorEncabezado 
+{
+    height:20px;
+    width:100%;
+    background-color:#0F205A;
+}
+/*El cuerpo, aqui se localiza el menú de navegación y el contenido de la página*/
+#cuerpo 
+{
+    height:auto;
+    width:80%;
+    float:left;
+    position:relative;
+    background-color:#FFFFFF;
+    margin-left:10%;
+    margin-top:0px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:0px;
+    margin-right:0%;
+    min-width:800px;
+    z-index:2;
+}
+/*Línea punteada*/
+/*Configuración del menu de navegación*/
+#menuNavegacion 
+{
+    position:relative;
+    float:left;
+    width:100%;
+    height:50px;
+    background-color:#FFFFFF;
+    border-bottom:1px dashed #CCCCCC;
+    z-index:1;
+}
+    #menuNavegacion ul
+    {
+          position:relative;
+          float:right;
+    }
+        #menuNavegacion ul li
+        {
+            position:relative;
+            float:left;
+            display:inline-block;
+            margin-right:15px;
+            margin-left:15px;
+            line-height:20px;
+        }
+            #menuNavegacion ul li a
+            {
+                text-decoration:none;
+
+            }
+            #menuNavegacion ul li a:hover
+            {
+                color:#111547;
+            }
+    #menuNavegacion span
+    {
+        position:relative;
+        float:right;
+        height:50px;
+        width:2px;
+        margin-top:-15px;
+        border-right:dashed;
+        border-color:#CCCCCC;
+        border-width:1px;
+    }
+#lateral
+{
+    margin-left:30px;
+    font-family:'Futura Std Light';
+    font-size:10px;
+    width:200px;
+}
+#menuLateral
+{
+    position:absolute;
+    float:left;
+    margin-top:-71px;
+    width:200px;
+    height:10px;
+    background-color:#cccccc;
+    opacity:0.2;
+    z-index:2;
+}
+#divCambioBanners
+{
+    position:relative;
+    float:left;
+    width:200px;
+    margin-top:-60px;
+    z-index:3;
+}
+#divAvisos
+{
+    position:relative;
+    float:left;
+    width:200px;
+    margin-top:-70px;
+    height:300px;
+    z-index:3;
+    text-align:center;
+}
+#separadorMenuLateral
+{
+        position:relative;
+        float:right;
+        height:50px;
+        width:2px;
+        border-bottom:dashed;
+        border-color:#CCCCCC;
+        border-width:2px;
+        z-index:2;
+}
+/*Tamaño y posición del contenido*/
+#contenido 
+{
+    position:relative;
+    float:right;
+    width:77%;
+    height:auto;
+    margin-top:0px;
+    margin-right:0%;
+}
+/*Tamaño y posición del pie de página*/
+#pieDePagina 
+{
+    height:50px;
+    width:80%;
+    position:relative;
+    float:left;
+    background-color:#999999;
+    margin-left:10%;
+    margin-right:10%;
+    min-width:800px;
+    z-index:10;
+}
+    /*Tamaño y posición de los logos del pie de página*/
+    #pieDePagina div 
+    {
+        position:relative;
+        float:right;
+        margin-top:15px;
+        margin-left:5px;
+        margin-right:5px;
+        width:30px;
+        height:30px;
+    }
+    /*Fix para el engine Webkit de safari*/
+    #pieDePagina img 
+    {
+        width:auto;
+        height:20px;
+    }
+
+/*Aqui empiezan los estilos de las páginas hijas*/
+
+/*Página Inicio.aspx*/
+
+/*Título del contenido de la página de inicio*/
+#areaTituloContenido 
+{
+    text-align:center;
+    width:100%;
+    font-size:16px;
+}
+#areaTextoContenido 
+{
+    width:100%;
+    text-align:center;
+}
+
+/*Página Estudiantes.aspx*/
+#areaForma 
+{
+    width:30%;
+    margin-left:35%;
+    margin-top:50px;
+}
+
+#divRegistro 
+{
+    width:80%;
+    margin-left:10%;
+}
+#divCambioPass
+{
+    width:60%;
+    margin-left:20%;
+}
